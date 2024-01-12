@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes'
 
 export default function DarkModeToggleButton() {
   const { theme, setTheme } = useTheme()
-  console.log('theme :>> ', theme)
+
   return (
     <button
       className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 hover:text-orange-500 dark:bg-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-yellow-300"
