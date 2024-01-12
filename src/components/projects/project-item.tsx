@@ -2,14 +2,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function ProjectItem({ data }) {
-  console.log('data :>> ', data)
   const { Name, Video, Description, Tags, Created } = data.properties
   const title = Name.title[0]?.plain_text
   const video = Video?.url || 'https://github.com/Dankimhaejun'
-  const description = Description?.rich_text[0]?.plain_text
-  const cover = data.cover?.external.url
-  const tags = Tags?.multi_select
-  const created = Created?.date?.start
+  const description =
+    Description?.rich_text[0]?.plain_text || '포트폴리오입니다.'
+  const cover = data.cover?.external.url || ''
+  const tags = Tags?.multi_select || []
+  const created = Created?.date?.start || ''
 
   return (
     <div className="project-card">
