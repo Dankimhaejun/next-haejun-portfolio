@@ -19,10 +19,7 @@ export default function Hero() {
           국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다.
         </p>
         <div className="flex justify-center">
-          <Link
-            href="/projects"
-            className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >
+          <Link href="/projects" className="btn-project">
             프로젝트 보러가기
           </Link>
         </div>
